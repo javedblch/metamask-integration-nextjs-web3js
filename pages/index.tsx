@@ -6,6 +6,7 @@ const MetaMaskPage = () => {
   const [account, setAccount] = useState(null);
   let accounts;
   let userAddress;
+  let privateKey = process.env.PRIVATE_KEY;
 
   useEffect(() => {
     const fetchAccount = async () => {
